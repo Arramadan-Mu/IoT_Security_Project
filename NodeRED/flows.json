@@ -1,0 +1,1077 @@
+[
+    {
+        "id": "5a3cd2de78ebaf25",
+        "type": "tab",
+        "label": "MyApp",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "49bf61c0fa13b427",
+        "type": "join",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "0214bd4d087c55d5",
+                "1cd6af279b529f7a",
+                "ea9f9eea73b96a3c",
+                "ba51d8d6e243b273"
+            ]
+        ]
+    },
+    {
+        "id": "af96127796942ca9",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "exportData",
+        "func": "msg.topic = \"SELECT * FROM `temperature` WHERE 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "e98fd7ede15d2d11"
+            ]
+        ]
+    },
+    {
+        "id": "3dfff1a9f176e49e",
+        "type": "csv",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "Id,currentVal",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "8eb15587a95e9084"
+            ]
+        ]
+    },
+    {
+        "id": "8eb15587a95e9084",
+        "type": "file",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "filename": "Q:\\CALABRIA\\report.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "ISO-8859-1",
+        "x": 950,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a32816131ca23a65",
+        "type": "http in",
+        "z": "5a3cd2de78ebaf25",
+        "name": "report.csv",
+        "url": "https://localhost:8443/report.csv",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 580,
+        "wires": [
+            [
+                "1ecc12be33407574"
+            ]
+        ]
+    },
+    {
+        "id": "e85e3a9f45906350",
+        "type": "http response",
+        "z": "5a3cd2de78ebaf25",
+        "name": "response",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "text/plain"
+        },
+        "x": 730,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a19302800b96e446",
+        "type": "inject",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "21600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "af96127796942ca9"
+            ]
+        ]
+    },
+    {
+        "id": "98366e1581de61c8",
+        "type": "comment",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Update DataBase",
+        "info": "",
+        "x": 490,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "23552fb3df6d2b37",
+        "type": "comment",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Download Report",
+        "info": "",
+        "x": 510,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9b1d743364904172",
+        "type": "ui_form",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Email form",
+        "label": "",
+        "group": "31d0ec5fb8acf3c1",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Type your email",
+                "value": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "payload.email",
+        "topicType": "msg",
+        "splitLayout": false,
+        "x": 650,
+        "y": 420,
+        "wires": [
+            [
+                "6e746d3ea725a2ba"
+            ]
+        ]
+    },
+    {
+        "id": "6e746d3ea725a2ba",
+        "type": "change",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "email",
+                "pt": "flow",
+                "to": "payload.email",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "857a231b8c1119f6",
+        "type": "ui_text",
+        "z": "5a3cd2de78ebaf25",
+        "group": "31d0ec5fb8acf3c1",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Note:",
+        "format": "This is an emercency alert!",
+        "layout": "row-left",
+        "x": 510,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "beaf78a5951cd493",
+        "type": "mqtt in",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "topic": "esp32/dhtReadmqttdata/temperature",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "84c1360e.b1e244",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "49bf61c0fa13b427",
+                "8d354181ec4a2a7a",
+                "9833613cb59a912f",
+                "72c6b107cb1131a8"
+            ]
+        ]
+    },
+    {
+        "id": "0214bd4d087c55d5",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "currentValue",
+        "func": "let oldVal = 0;\nvar newVal = parseFloat(msg.payload[0]); //val  from sensor\n\nif(msg.payload[1][0] !== undefined ){\n     oldVal = parseFloat(msg.payload[1][0].currentVal);//value from DB\n}\n\nvar d = new Date();\nvar day = d.getDate();\nvar month = d.getMonth();\nvar monthformat = month + 1;\nvar year = d.getFullYear();\nvar currentDate = year+\"-\"+ monthformat +\"-\"+ day;// the value for date\n\n\nmsg.topic = \"INSERT INTO `modb`.`temperature` (`currentVal`, `date`) VALUES (?, ?) ON DUPLICATE KEY UPDATE `currentVal` = \" + newVal;\nmsg.payload = [newVal, currentDate];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 746.9999847412109,
+        "y": 320.00000762939453,
+        "wires": [
+            [
+                "1e4b09e120afa1c8"
+            ]
+        ]
+    },
+    {
+        "id": "8d354181ec4a2a7a",
+        "type": "ui_gauge",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "group": "fd1342d05acec8c8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "H",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 450,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1cd6af279b529f7a",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Mail",
+        "func": "var newVal = parseFloat(msg.payload[0]); //val  from sensor\n\nif(newVal <= 10 || newVal >= 30){\n    msg.topic = \"The emercency alert!\" ;\n    msg.payload =\"Dear User,\\n I want to inform you that the Temperature in your house is low or high.\\nThe current Temperature is: \" + newVal;\n    return msg;\n}else{\n    return null;\n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 675.9999885559082,
+        "y": 260.00002098083496,
+        "wires": [
+            [
+                "a489858af6910127"
+            ]
+        ]
+    },
+    {
+        "id": "a489858af6910127",
+        "type": "change",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "to",
+                "pt": "msg",
+                "to": "email",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 260,
+        "wires": [
+            [
+                "a7c858b6bf5f68e0"
+            ]
+        ]
+    },
+    {
+        "id": "a7c858b6bf5f68e0",
+        "type": "e-mail",
+        "z": "5a3cd2de78ebaf25",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "email",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c617e12b1833793a",
+        "type": "ui_gauge",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "group": "8cc56cdd50e4fbc4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "H",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 400,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6f2a8fcb7a346145",
+        "type": "mqtt in",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "topic": "esp32/dhtReadmqttdata/humidity",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "84c1360e.b1e244",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 170,
+        "y": 720,
+        "wires": [
+            [
+                "c617e12b1833793a",
+                "98781212cba1d232",
+                "10d360b290c745fb",
+                "06abb4e816f5b283"
+            ]
+        ]
+    },
+    {
+        "id": "98781212cba1d232",
+        "type": "join",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 590,
+        "y": 720,
+        "wires": [
+            [
+                "6962322877d7e23f",
+                "4be012f920b5089d",
+                "22cc5156d869b1ca",
+                "711eabdd6869c619"
+            ]
+        ]
+    },
+    {
+        "id": "21ad966cfae36855",
+        "type": "comment",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Update DataBase",
+        "info": "",
+        "x": 590,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6962322877d7e23f",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "currentValue",
+        "func": "let oldVal = 0;\nvar newVal = parseFloat(msg.payload[0]); //val  from sensor\n\nif(msg.payload[1][0] !== undefined ){\n     oldVal = parseFloat(msg.payload[1][0].currentVal);//value from DB\n}\n\nvar d = new Date();\nvar day = d.getDate();\nvar month = d.getMonth();\nvar monthformat = month + 1;\nvar year = d.getFullYear();\nvar currentDate = year+\"-\"+ monthformat +\"-\"+ day;// the value for date\n\n\nmsg.topic = \"INSERT INTO `modb`.`humidity` (`currentVal`, `date`) VALUES (?, ?) ON DUPLICATE KEY UPDATE currentVal = \" + newVal;\nmsg.payload = [newVal, currentDate];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 740,
+        "wires": [
+            [
+                "a7b82b5ea996721c"
+            ]
+        ]
+    },
+    {
+        "id": "4be012f920b5089d",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Mail",
+        "func": "var newVal = parseFloat(msg.payload[0]); //val  from sensor\n\nif(newVal <= 10 || newVal >= 50){\n    msg.topic = \"The emercency alert!\" ;\n    msg.payload =\"Dear User,\\n I want to inform you that the Humidity in your house is low or high.\\nThe current Humidity is: \" + newVal;\n    return msg;\n}else{\n    return null;\n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 680,
+        "wires": [
+            [
+                "2b578e77e5ebdf8c"
+            ]
+        ]
+    },
+    {
+        "id": "2b578e77e5ebdf8c",
+        "type": "change",
+        "z": "5a3cd2de78ebaf25",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "to",
+                "pt": "msg",
+                "to": "email",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 680,
+        "wires": [
+            [
+                "4038d0f84f117656"
+            ]
+        ]
+    },
+    {
+        "id": "4038d0f84f117656",
+        "type": "e-mail",
+        "z": "5a3cd2de78ebaf25",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "email",
+        "x": 1110,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "1e4b09e120afa1c8",
+        "type": "mysql",
+        "z": "5a3cd2de78ebaf25",
+        "mydb": "54a71b02887235d1",
+        "name": "",
+        "x": 890,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e98fd7ede15d2d11",
+        "type": "mysql",
+        "z": "5a3cd2de78ebaf25",
+        "mydb": "54a71b02887235d1",
+        "name": "",
+        "x": 530,
+        "y": 520,
+        "wires": [
+            [
+                "3dfff1a9f176e49e"
+            ]
+        ]
+    },
+    {
+        "id": "a7b82b5ea996721c",
+        "type": "mysql",
+        "z": "5a3cd2de78ebaf25",
+        "mydb": "54a71b02887235d1",
+        "name": "",
+        "x": 970,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9833613cb59a912f",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "readData",
+        "func": "msg.topic = \"SELECT * FROM `temperature` ORDER BY Id DESC LIMIT 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "81a576bf2b382d9d"
+            ]
+        ]
+    },
+    {
+        "id": "81a576bf2b382d9d",
+        "type": "mysql",
+        "z": "5a3cd2de78ebaf25",
+        "mydb": "54a71b02887235d1",
+        "name": "",
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "49bf61c0fa13b427"
+            ]
+        ]
+    },
+    {
+        "id": "1ecc12be33407574",
+        "type": "ui_template",
+        "z": "5a3cd2de78ebaf25",
+        "group": "31d0ec5fb8acf3c1",
+        "name": "",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "format": "<style type=\"text/css\">\n.button {\n    display: block;\n    width: 100px;\n    height: 20px;\n    background: #4E9CAF;\n    padding: 10px;\n    text-align: center;\n    border-radius: 5px;\n    color: white;\n    font-weight: bold;\n    line-height: 25px;\n}\n</style>\n<div ng-bind-html=\"msg.payload\"></div>\n<a class=\"button\" href=\"https://192.168.156.226:8443/report.csv\">Download</a>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 480,
+        "y": 600,
+        "wires": [
+            [
+                "e85e3a9f45906350"
+            ]
+        ]
+    },
+    {
+        "id": "10d360b290c745fb",
+        "type": "ui_chart",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Humidity Chart",
+        "group": "8cc56cdd50e4fbc4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "No Data Available",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 460,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72c6b107cb1131a8",
+        "type": "ui_chart",
+        "z": "5a3cd2de78ebaf25",
+        "name": "Temperature Chart",
+        "group": "fd1342d05acec8c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "No Data Available",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#b31e1e",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 330,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea9f9eea73b96a3c",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "updateMaxVal",
+        "func": "// Initialize maximum value and date\ncontext.maxValue = context.maxValue || 0;\ncontext.maxDate = context.maxDate || '';\n\nvar newVal = parseFloat(msg.payload[0]); // Value from the sensor\n\n// Check if the current value is higher than the stored maximum\nif (newVal > context.maxValue) {\n    // Update the stored maximum value and date\n    context.maxValue = newVal;\n    var d = new Date();\n    var day = d.getDate();\n    var month = d.getMonth() + 1;\n    var year = d.getFullYear();\n    context.maxDate = year + \"-\" + month + \"-\" + day; // The value for date\n}\n\n// Set payload to the maximum value and date\nmsg.payload = {\n    value: context.maxValue,\n    date: context.maxDate\n};\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "63fcf0da80f7ad83"
+            ]
+        ]
+    },
+    {
+        "id": "63fcf0da80f7ad83",
+        "type": "ui_template",
+        "z": "5a3cd2de78ebaf25",
+        "group": "fd1342d05acec8c8",
+        "name": "Max Temperature ",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; word-wrap: break-word;\">\n    <h2>Max Temperature</h2>\n    <p style=\"font-size: 24px;\">{{msg.payload.value}} °C</p>\n    <p style=\"font-size: 14px; color: #888;\">(Recorded on {{msg.payload.date}})</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1010,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba51d8d6e243b273",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "updateMinVal",
+        "func": "// Initialize minimum value and date\ncontext.minValue = context.minValue || Number.MAX_VALUE;\ncontext.minDate = context.minDate || '';\n\nvar newVal = parseFloat(msg.payload[0]); // Value from the sensor\n\n// Check if the current value is lower than the stored minimum\nif (newVal < context.minValue) {\n    // Update the stored minimum value and date\n    context.minValue = newVal;\n    var d = new Date();\n    var day = d.getDate();\n    var month = d.getMonth() + 1;\n    var year = d.getFullYear();\n    context.minDate = year + \"-\" + month + \"-\" + day; // The value for date\n}\n\n// Set payload to the minimum value and date\nmsg.payload = {\n    value: context.minValue,\n    date: context.minDate\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 200,
+        "wires": [
+            [
+                "e798ee484313574f"
+            ]
+        ]
+    },
+    {
+        "id": "e798ee484313574f",
+        "type": "ui_template",
+        "z": "5a3cd2de78ebaf25",
+        "group": "fd1342d05acec8c8",
+        "name": "Min Temperature ",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n    <h2>Min Temperature</h2>\n    <p style=\"font-size: 24px;\">{{msg.payload.value}} °C</p>\n    <p style=\"font-size: 14px; color: #888;\">(Recorded on {{msg.payload.date}})</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 990,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "711eabdd6869c619",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "updateMinVal",
+        "func": "// Initialize minimum value and date\ncontext.minValue = context.minValue || Number.MAX_VALUE;\ncontext.minDate = context.minDate || '';\n\nvar newVal = parseFloat(msg.payload[0]); // Value from the sensor\n\n// Check if the current value is lower than the stored minimum\nif (newVal < context.minValue) {\n    // Update the stored minimum value and date\n    context.minValue = newVal;\n    var d = new Date();\n    var day = d.getDate();\n    var month = d.getMonth() + 1;\n    var year = d.getFullYear();\n    context.minDate = year + \"-\" + month + \"-\" + day; // The value for date\n}\n\n// Set payload to the minimum value and date\nmsg.payload = {\n    value: context.minValue,\n    date: context.minDate\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 860,
+        "wires": [
+            [
+                "0f817ec06510d309"
+            ]
+        ]
+    },
+    {
+        "id": "0f817ec06510d309",
+        "type": "ui_template",
+        "z": "5a3cd2de78ebaf25",
+        "group": "8cc56cdd50e4fbc4",
+        "name": "Min Humidity",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n    <h2>Min Humidity</h2>\n    <p style=\"font-size: 24px;\">{{msg.payload.value}} %</p>\n    <p style=\"font-size: 14px; color: #888;\">(Recorded on {{msg.payload.date}})</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1050,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22cc5156d869b1ca",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "updateMaxVal",
+        "func": "// Initialize maximum value and date\ncontext.maxValue = context.maxValue || 0;\ncontext.maxDate = context.maxDate || '';\n\nvar newVal = parseFloat(msg.payload[0]); // Value from the sensor\n\n// Check if the current value is higher than the stored maximum\nif (newVal > context.maxValue) {\n    // Update the stored maximum value and date\n    context.maxValue = newVal;\n    var d = new Date();\n    var day = d.getDate();\n    var month = d.getMonth();\n    var monthformat = month + 1;\n    var year = d.getFullYear();\n    context.maxDate = year + \"-\" + monthformat + \"-\" + day; // The value for date\n}\n\n// Set payload to the maximum value and date\nmsg.payload = {\n    value: context.maxValue,\n    date: context.maxDate\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 820,
+        "wires": [
+            [
+                "20799e99764abea1"
+            ]
+        ]
+    },
+    {
+        "id": "20799e99764abea1",
+        "type": "ui_template",
+        "z": "5a3cd2de78ebaf25",
+        "group": "8cc56cdd50e4fbc4",
+        "name": "Max Humidity",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n    <h2>Max Humidity</h2>\n    <p style=\"font-size: 24px;\">{{msg.payload.value}} %</p>\n    <p style=\"font-size: 14px; color: #888;\">(Recorded on {{msg.payload.date}})</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1060,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06abb4e816f5b283",
+        "type": "function",
+        "z": "5a3cd2de78ebaf25",
+        "name": "readData",
+        "func": "msg.topic = \"SELECT * FROM `humidity` ORDER BY Id DESC LIMIT 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 880,
+        "wires": [
+            [
+                "620f350d5ca76e70"
+            ]
+        ]
+    },
+    {
+        "id": "620f350d5ca76e70",
+        "type": "mysql",
+        "z": "5a3cd2de78ebaf25",
+        "mydb": "54a71b02887235d1",
+        "name": "",
+        "x": 510,
+        "y": 840,
+        "wires": [
+            [
+                "98781212cba1d232"
+            ]
+        ]
+    },
+    {
+        "id": "b4c0c0fc55b90dbd",
+        "type": "ui_spacer",
+        "z": "5a3cd2de78ebaf25",
+        "name": "spacer",
+        "group": "31d0ec5fb8acf3c1",
+        "order": 1,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "92f39485c36576c5",
+        "type": "ui_spacer",
+        "z": "5a3cd2de78ebaf25",
+        "name": "spacer",
+        "group": "31d0ec5fb8acf3c1",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "31d0ec5fb8acf3c1",
+        "type": "ui_group",
+        "name": "Configurations",
+        "tab": "4f3bdab46a144bd5",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "84c1360e.b1e244",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "192.168.156.226",
+        "port": "8885",
+        "tls": "2594b3de3bc52c19",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fd1342d05acec8c8",
+        "type": "ui_group",
+        "name": "Temperature Data",
+        "tab": "4f3bdab46a144bd5",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8cc56cdd50e4fbc4",
+        "type": "ui_group",
+        "name": "Humidity Data",
+        "tab": "4f3bdab46a144bd5",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "54a71b02887235d1",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "192.168.156.226",
+        "port": "3306",
+        "db": "modb",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "4f3bdab46a144bd5",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2594b3de3bc52c19",
+        "type": "tls-config",
+        "name": "my TLS Config",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "client_mqtt_cert.pem",
+        "keyname": "client_mqtt_key.pem",
+        "caname": "ca_cert.pem",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    }
+]

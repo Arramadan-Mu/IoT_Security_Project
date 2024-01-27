@@ -1,0 +1,455 @@
+2024-01-25 08:26:19,967 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 08:26:32,684 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 08:30:06,300 [INFO] - Received GET request: /report.csv
+2024-01-25 08:30:06,301 [WARNING] - No Authorization header received
+2024-01-25 08:30:49,237 [INFO] - Received GET request: /report.csv
+2024-01-25 08:30:49,237 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:30:49,942 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:30:49,942 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:31:39,293 [INFO] - Received GET request: /report.csv
+2024-01-25 08:31:39,294 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:31:39,815 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:31:39,815 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:31:44,600 [INFO] - Received GET request: /report.csv
+2024-01-25 08:31:44,600 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:31:45,140 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:31:45,140 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:32:07,361 [INFO] - Received GET request: /
+2024-01-25 08:32:07,362 [WARNING] - No Authorization header received
+2024-01-25 08:32:29,538 [INFO] - Received GET request: /
+2024-01-25 08:32:29,538 [INFO] - Received credentials - Username: username, Password: password
+2024-01-25 08:32:29,538 [WARNING] - Authorization not accepted
+2024-01-25 08:33:01,590 [INFO] - Received GET request: /
+2024-01-25 08:33:01,590 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 08:33:01,590 [WARNING] - Authorization not accepted
+2024-01-25 08:33:26,819 [INFO] - Received GET request: /
+2024-01-25 08:33:26,819 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:33:27,002 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:33:27,002 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:08,646 [INFO] - Received GET request: /report.csv
+2024-01-25 08:34:08,647 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:08,822 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:34:08,822 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:17,965 [INFO] - Received GET request: /report.csv
+2024-01-25 08:34:17,965 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:18,145 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:34:18,146 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:37,061 [INFO] - Received GET request: /ca.crt
+2024-01-25 08:34:37,061 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:37,198 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:34:37,198 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:47,642 [INFO] - Received GET request: /ca.crt
+2024-01-25 08:34:47,642 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:34:47,802 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:34:47,802 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:35:00,200 [INFO] - Received GET request: /ca.crt
+2024-01-25 08:35:00,200 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:35:00,656 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:35:00,656 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:35:19,975 [INFO] - Received GET request: /ca.crt
+2024-01-25 08:35:19,976 [WARNING] - No Authorization header received
+2024-01-25 08:35:34,471 [INFO] - Received GET request: /ca.crt
+2024-01-25 08:35:34,471 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 08:35:34,475 [WARNING] - Authorization not accepted
+2024-01-25 08:35:53,350 [INFO] - Received GET request: /ca.crt
+2024-01-25 08:35:53,350 [WARNING] - No Authorization header received
+2024-01-25 08:40:06,268 [INFO] - Received GET request: /report.csv
+2024-01-25 08:40:06,268 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 08:40:06,840 [INFO] - Received GET request: /favicon.ico
+2024-01-25 08:40:06,840 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:00:57,598 [INFO] - Received GET request: /report.csv
+2024-01-25 09:00:57,598 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:00:58,126 [INFO] - Received GET request: /favicon.ico
+2024-01-25 09:00:58,126 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:10:32,078 [INFO] - Received GET request: /report.csv
+2024-01-25 09:10:32,078 [WARNING] - No Authorization header received
+2024-01-25 09:15:46,400 [INFO] - Received GET request: /report.csv
+2024-01-25 09:15:46,400 [WARNING] - No Authorization header received
+2024-01-25 09:15:46,412 [INFO] - Received GET request: /report.csv
+2024-01-25 09:15:46,412 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:23:49,129 [INFO] - Received GET request: /report.csv
+2024-01-25 09:23:49,129 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:23:49,690 [INFO] - Received GET request: /favicon.ico
+2024-01-25 09:23:49,690 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:25:11,633 [INFO] - Received GET request: /report.csv
+2024-01-25 09:25:11,633 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 09:25:12,153 [INFO] - Received GET request: /favicon.ico
+2024-01-25 09:25:12,153 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:32:12,802 [INFO] - Received GET request: /report.csv
+2024-01-25 10:32:12,810 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:32:13,386 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:32:13,387 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:32:27,134 [INFO] - Received GET request: /report.csv
+2024-01-25 10:32:27,134 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:32:27,484 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:32:27,484 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:42:26,052 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 10:42:34,570 [INFO] - Received GET request: /report.csv
+2024-01-25 10:42:34,570 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:42:34,892 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:42:34,892 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:42:50,889 [INFO] - Received GET request: /report.csv
+2024-01-25 10:42:50,889 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:42:51,331 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:42:51,331 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:00,180 [INFO] - Received GET request: /
+2024-01-25 10:43:00,180 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:00,604 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:43:00,604 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:13,794 [INFO] - Received GET request: /report.csv
+2024-01-25 10:43:13,795 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:14,268 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:43:14,269 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:20,676 [INFO] - Received GET request: /report.csv
+2024-01-25 10:43:20,676 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:21,227 [INFO] - Received GET request: /
+2024-01-25 10:43:21,228 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:21,238 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:43:21,238 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:21,615 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:43:21,616 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:36,211 [INFO] - Received GET request: /report.csv
+2024-01-25 10:43:36,211 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:43:36,564 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:43:36,565 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:46:02,124 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 10:46:06,361 [INFO] - Received GET request: /report.csv
+2024-01-25 10:46:06,362 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:46:06,783 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:46:06,783 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:46:32,196 [INFO] - Received GET request: /
+2024-01-25 10:46:32,196 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:46:32,614 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:46:32,614 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:52:52,904 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 10:53:00,651 [INFO] - Received GET request: /
+2024-01-25 10:53:00,651 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:53:01,081 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:53:01,082 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:53:18,787 [INFO] - Received GET request: /report.csv
+2024-01-25 10:53:18,787 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:53:19,203 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:53:19,204 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:53:58,660 [INFO] - Received GET request: /report.csv
+2024-01-25 10:53:58,660 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:53:58,875 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:53:58,875 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:54:13,346 [INFO] - Received GET request: /report.csv
+2024-01-25 10:54:13,347 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:54:13,574 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:54:13,575 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:54:15,655 [INFO] - Received GET request: /report.csv
+2024-01-25 10:54:15,655 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:54:51,269 [INFO] - Received GET request: /
+2024-01-25 10:54:51,270 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:54:51,408 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:54:51,409 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 10:56:12,390 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 10:56:35,269 [INFO] - Received GET request: /report.csv
+2024-01-25 10:56:35,269 [WARNING] - No Authorization header received
+2024-01-25 10:57:00,143 [INFO] - Received GET request: /report.csv
+2024-01-25 10:57:00,145 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 10:57:00,620 [INFO] - Received GET request: /favicon.ico
+2024-01-25 10:57:00,620 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 10:57:00,621 [WARNING] - Authorization not accepted
+2024-01-25 10:59:49,094 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 10:59:54,715 [INFO] - Received GET request: /report.csv
+2024-01-25 10:59:54,715 [WARNING] - No Authorization header received
+2024-01-25 11:00:12,988 [INFO] - Received GET request: /report.csv
+2024-01-25 11:00:12,989 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 11:00:13,446 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:00:13,447 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 11:00:13,447 [WARNING] - Authorization not accepted
+2024-01-25 11:00:27,348 [INFO] - Received GET request: /
+2024-01-25 11:00:27,348 [WARNING] - No Authorization header received
+2024-01-25 11:00:38,379 [INFO] - Received GET request: /
+2024-01-25 11:00:38,380 [INFO] - Received credentials - Username: download_only, Password: download_password
+2024-01-25 11:00:38,380 [WARNING] - Authorization not accepted
+2024-01-25 11:00:55,583 [INFO] - Received GET request: /
+2024-01-25 11:00:55,583 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:00:56,015 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:00:56,016 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:00:58,008 [INFO] - Received GET request: /report.csv
+2024-01-25 11:00:58,009 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:00:58,191 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:00:58,191 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:01:01,768 [INFO] - Received GET request: /report.csv
+2024-01-25 11:01:01,768 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:01:02,188 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:01:02,188 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:02:26,748 [INFO] - Received GET request: /report.csv
+2024-01-25 11:02:26,748 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:02:27,191 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:02:27,192 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:17:09,455 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 11:17:15,529 [INFO] - Received GET request: /report.csv
+2024-01-25 11:17:15,529 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:17:15,760 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:17:15,761 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:17:28,210 [INFO] - Received GET request: /
+2024-01-25 11:17:28,210 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:17:28,367 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:17:28,367 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:21:21,253 [INFO] - Received GET request: /
+2024-01-25 11:21:21,253 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:21:21,476 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:21:21,476 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:21:42,020 [INFO] - Received GET request: /
+2024-01-25 11:21:42,020 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:21:42,230 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:21:42,230 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:22:21,180 [INFO] - Received GET request: /
+2024-01-25 11:22:21,181 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:22:21,319 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:22:21,319 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:22:31,954 [INFO] - Received GET request: /report.csv
+2024-01-25 11:22:31,955 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:22:32,106 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:22:32,106 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:22:39,611 [INFO] - Received GET request: /report.csv
+2024-01-25 11:22:39,611 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:22:39,815 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:22:39,815 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:23:40,321 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 11:23:45,559 [INFO] - Received GET request: /report.csv
+2024-01-25 11:23:45,560 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:23:45,785 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:23:45,785 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:26:44,243 [INFO] - Received GET request: /
+2024-01-25 11:26:44,243 [WARNING] - No Authorization header received
+2024-01-25 11:27:05,988 [INFO] - Received GET request: /
+2024-01-25 11:27:05,988 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:27:06,035 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:27:06,036 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:27:37,489 [INFO] - Received GET request: /report.csv
+2024-01-25 11:27:37,489 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:27:37,512 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:27:37,512 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:28:01,735 [INFO] - Received GET request: /report.csv
+2024-01-25 11:28:01,735 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 11:28:01,753 [INFO] - Received GET request: /favicon.ico
+2024-01-25 11:28:01,753 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 12:08:03,505 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 12:25:21,141 [INFO] - Received GET request: /report.csv
+2024-01-25 12:25:21,141 [INFO] - Received credentials - Username: root, Password: root_password
+2024-01-25 12:25:21,141 [WARNING] - Authorization not accepted
+2024-01-25 12:25:50,412 [INFO] - Received GET request: /report.csv
+2024-01-25 12:25:50,412 [INFO] - Received credentials - Username: dfg, Password: 
+2024-01-25 12:25:50,412 [WARNING] - Authorization not accepted
+2024-01-25 12:26:13,340 [INFO] - Received GET request: /report.csv
+2024-01-25 12:26:13,340 [WARNING] - No Authorization header received
+2024-01-25 12:26:41,637 [INFO] - Received GET request: /report.csv
+2024-01-25 12:26:41,638 [WARNING] - No Authorization header received
+2024-01-25 12:26:54,574 [INFO] - Received GET request: /report.csv
+2024-01-25 12:26:54,575 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 12:26:54,748 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:26:54,748 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 12:26:54,748 [WARNING] - Authorization not accepted
+2024-01-25 12:28:54,471 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 12:28:57,149 [INFO] - Received GET request: /report.csv
+2024-01-25 12:28:57,149 [WARNING] - No Authorization header received
+2024-01-25 12:29:07,240 [INFO] - Received GET request: /report.csv
+2024-01-25 12:29:07,240 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 12:29:07,342 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:29:07,342 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 12:29:07,342 [WARNING] - Authorization not accepted
+2024-01-25 12:29:17,589 [INFO] - Received GET request: /report.csv
+2024-01-25 12:29:17,590 [WARNING] - No Authorization header received
+2024-01-25 12:29:26,169 [INFO] - Received GET request: /report.csv
+2024-01-25 12:29:26,169 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:29:26,342 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:29:26,342 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:29:59,249 [INFO] - Received GET request: /report.csv
+2024-01-25 12:29:59,249 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:29:59,330 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:29:59,330 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:36:18,298 [INFO] - Received GET request: /report.csv
+2024-01-25 12:36:18,299 [WARNING] - No Authorization header received
+2024-01-25 12:36:26,502 [INFO] - Received GET request: /report.csv
+2024-01-25 12:36:26,502 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 12:36:26,933 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:36:26,933 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 12:36:26,933 [WARNING] - Authorization not accepted
+2024-01-25 12:38:03,895 [INFO] - Received GET request: /report.csv
+2024-01-25 12:38:03,896 [WARNING] - No Authorization header received
+2024-01-25 12:38:52,028 [INFO] - Received GET request: /report.csv
+2024-01-25 12:38:52,028 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:38:52,463 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:38:52,463 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:41:58,671 [INFO] - Received GET request: /report.csv
+2024-01-25 12:41:58,671 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 12:41:59,154 [INFO] - Received GET request: /favicon.ico
+2024-01-25 12:41:59,155 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:29,206 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:29,207 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:29,679 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:29,679 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:54,661 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:54,662 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:55,132 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:55,132 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:55,959 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:55,971 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:56,358 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:56,358 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:56,574 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:56,574 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:57,051 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:57,073 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:57,087 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:57,092 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:57,579 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:57,585 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:57,600 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:57,602 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:58,079 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:58,079 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:58,123 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:58,123 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:58,629 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:58,629 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:59,483 [INFO] - Received GET request: /report.csv
+2024-01-25 13:05:59,483 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:05:59,914 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:05:59,919 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:06:00,050 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:00,050 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:06:00,587 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:06:00,587 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:06:23,552 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:23,552 [WARNING] - No Authorization header received
+2024-01-25 13:06:31,040 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:31,041 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:06:31,510 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:06:31,511 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:06:31,511 [WARNING] - Authorization not accepted
+2024-01-25 13:06:33,641 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:33,641 [WARNING] - No Authorization header received
+2024-01-25 13:06:42,946 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:42,947 [INFO] - Received credentials - Username: sfd, Password: grfwsfws
+2024-01-25 13:06:42,947 [WARNING] - Authorization not accepted
+2024-01-25 13:06:50,574 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:50,575 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:06:50,986 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:06:50,986 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:06:50,987 [WARNING] - Authorization not accepted
+2024-01-25 13:06:52,745 [INFO] - Received GET request: /report.csv
+2024-01-25 13:06:52,746 [WARNING] - No Authorization header received
+2024-01-25 13:07:03,862 [INFO] - Received GET request: /report.csv
+2024-01-25 13:07:03,862 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:04,289 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:07:04,290 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:05,324 [INFO] - Received GET request: /report.csv
+2024-01-25 13:07:05,324 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:05,481 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:07:05,484 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:08,581 [INFO] - Received GET request: /report.csv
+2024-01-25 13:07:08,582 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:08,746 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:07:08,747 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:08,878 [INFO] - Received GET request: /report.csv
+2024-01-25 13:07:08,879 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:07:09,039 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:07:09,039 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:10:28,258 [INFO] - Starting secure server on 192.168.156.226:8443...
+2024-01-25 13:15:01,621 [INFO] - Received GET request: /report.csv
+2024-01-25 13:15:01,622 [WARNING] - No Authorization header received
+2024-01-25 13:15:21,778 [INFO] - Received GET request: /report.csv
+2024-01-25 13:15:21,778 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:39:51,254 [INFO] - Received GET request: /report.csv
+2024-01-25 13:39:51,255 [WARNING] - No Authorization header received
+2024-01-25 13:40:01,268 [INFO] - Received GET request: /report.csv
+2024-01-25 13:40:01,268 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:40:01,668 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:40:01,668 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:20,276 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:20,277 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:20,474 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:20,474 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:21,019 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:21,019 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:21,192 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:21,192 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:21,203 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:21,204 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:21,347 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:21,349 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:21,879 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:21,880 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:22,065 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:22,066 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:22,441 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:22,441 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:22,623 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:22,623 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:22,795 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:22,795 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:22,948 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:22,948 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:22,996 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:22,996 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:23,154 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:23,154 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:23,200 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:23,200 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:23,351 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:23,351 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:39,051 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:39,051 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:39,201 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:39,201 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:39,452 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:39,452 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:39,580 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:39,580 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:39,609 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:39,609 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:39,775 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:39,775 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:40,200 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:40,201 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:40,375 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:40,375 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:40,562 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:40,562 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:40,724 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:40,724 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:50,776 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:50,776 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:50,916 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:50,917 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:50,937 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:50,938 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:51,100 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:51,101 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:51,272 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:51,272 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:51,415 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:51,415 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:53,581 [INFO] - Received GET request: /report.csv
+2024-01-25 13:41:53,581 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:41:54,043 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:41:54,043 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:42:24,923 [INFO] - Received GET request: /report.csv
+2024-01-25 13:42:24,923 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:42:25,088 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:42:25,088 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:42:30,251 [INFO] - Received GET request: /report.csv
+2024-01-25 13:42:30,251 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:42:30,720 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:42:30,720 [INFO] - Received credentials - Username: root, Password: 1234543210
+2024-01-25 13:43:45,159 [INFO] - Received GET request: /report.csv
+2024-01-25 13:43:45,160 [WARNING] - No Authorization header received
+2024-01-25 13:43:52,085 [INFO] - Received GET request: /report.csv
+2024-01-25 13:43:52,086 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:43:52,147 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:43:52,148 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:43:52,148 [WARNING] - Authorization not accepted
+2024-01-25 13:44:16,995 [INFO] - Received GET request: /report.csv
+2024-01-25 13:44:16,996 [WARNING] - No Authorization header received
+2024-01-25 13:44:25,521 [INFO] - Received GET request: /report.csv
+2024-01-25 13:44:25,522 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:44:25,973 [INFO] - Received GET request: /favicon.ico
+2024-01-25 13:44:25,973 [INFO] - Received credentials - Username: mo, Password: 1234543210
+2024-01-25 13:44:25,973 [WARNING] - Authorization not accepted
+2024-01-26 00:32:18,301 [INFO] - Starting secure server on 192.168.156.226:8443...
